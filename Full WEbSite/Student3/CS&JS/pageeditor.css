@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    width: 100%;
+    background-color: #13005A;
+}
+
+header{
+    background-color: #868686;
+    padding-top: 10px;
+}
+header h1{
+    text-align: center;
+    color: #fff;
+}
+/*details and tasks divs are here*/
+.container{
+    width: 100%;
+    padding: 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+/*details about me*/
+.details{
+    width: 500px;
+    height: 35rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px 40px;
+    margin: 10px 35px 30px 50px;
+    position: absolute;
+    top:15%;
+    left: 0%;
+    background-color: #d3cece;
+}
+
+.details h2{
+    color: #000;
+    font-size: 30px;
+    text-align: center; 
+}
+
+.details img{
+    width: 200px;
+    height: 15rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.details .info p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.details .info span{
+    color: #362FD9;
+}
+/*The tasks I did*/
+.tasks{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 36rem;
+    padding: 20px 120px 20px 80px;
+    border: 2px solid #000;
+    background-color: #302cb8;
+    position: absolute;
+    top: 15%;
+    left: 47%;
+}
+
+.tasks h2{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tasks h4{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*The buttons of links to the web pages I did*/
+.tasks button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.tasks button:hover{
+    color: #fff;
+    background-color: #13005A;
+    cursor: pointer;
+}
+
+.tasks .data{
+    padding-left: 50px;
+}

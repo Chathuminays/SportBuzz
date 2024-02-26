@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="sportbuzzcopy.jpeg">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="text">Sport<span>Buzz</span></a>
+        
+         <nav class="navbar">
+            <a href="../../Student2/Home.html">Home</a>
+            <a href="../../Student1/Buyproducts.html">Shop</a>
+            <a href="../../Student3/Start_Quiz.html">Quiz</a>
+            <a href="../Gallery 2/Gallery.html" class="active">Gallery</a>
+            <a href="../Site map/Sitemap.html">Site Map</a>
+            <a href="../../Student2/Feedback.html">Feedback</a>
+            <a href="../../Student3/AboutUs.html">About us</a>
+        </nav>
+        <a href="#"><img src="sportbuzzcopy.jpeg" alt="" class="logo"></a>  
+    </header>    
+    <h1>Image Gallery</h1>
+        <br>
+
+
+       
+        <form>
+
+            <div class="adj">
+                Background Colour :
+                
+        <!-- change background colour-->
+
+                <select style="font-family:poppins; color:white;background-color:black;font-size: 15px;" onchange="pagecolor(this.value)">
+                    <option  value="">By Default</option>
+                    <option value="#767171">Grey</option>
+                    <option value="#d4b000">Yellow</option>
+                    <option value="#75bff0">Blue</option>
+                    <option value="#cea9cf">Pink</option>
+                </select>  
+
+                  
+                <div class="sixe">
+                Font Colour :<!-- change font colour-->
+                
+
+                <select style="font-family: poppins; color:white;background-color:black; font-size: 15px;" onchange="textcolor(this.value)">
+                    <option value="">Default</option>
+                    <option value="#de1212">Red</option>
+                    <option value="#1b0d85">Blue</option>
+                    <option value="#50014d">purple</option>
+                    <option value="#7f3700">Brown</option>
+                </select>
+
+                &nbsp;&nbsp;&nbsp;Font Size:<!-- change font size-->
+
+               <select style="font-family: poppins; color:white;background-color:black; font-size: 15px;" onchange="textsize(this.value)">
+                  <option value="">Default</option>
+                  <option value="14px">Small</option>
+                  <option value="17px">Medium</option>
+                  <option value="20px">Large</option>
+               </select>
+               </div>
+            </div>
+        </form>
+        <img src="cricket.jpeg" id="main" alt="mainimage">
+        <div id="description" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <div>
+                <b><u>Cricket</u></b>
+           
+            <p style="font-size: 18px;">
+                Cricket is a bat-and-ball game played between two teams of eleven players each. 
+                The game is popular in many countries, particularly in England, Australia, India, and Sri Lanka. 
+                The objective of the game is for the batting team to score as many runs as possible while the fielding team tries to get the batsmen out. 
+                The game is played on a large oval-shaped field with a rectangular 22-yard-long pitch in the center. 
+                Cricket matches can last several hours or even days, with various formats including Test matches, One Day Internationals (ODIs), and Twenty20 (T20) matches.
+                Cricket is known for its complex rules and strategies, as well as its unique terminology, such as wickets, boundaries, and LBW.
+                &nbsp;<button onclick="location.href='../../Student2/Cricket.html'">&nbsp;Click to more&nbsp;</button>
+            </p> </div>
+        </div>
+        
+        
+
+
+        <div class="thumbnails" id="thumbnails">
+            <img id="1" class="thumbnail img active" src="cricket.jpeg" alt="cricket" onmouseover="description_Cricket()">
+            <img id="2" class="thumb" src="badminton.jpeg" alt="badminton"   onmouseenter="description_Badminton()">
+            <img id="3" class="thumb"  src="Swimming.webp" alt="Swimming"    onmouseenter="description_Swimming()"  >
+            <img id="4"  class="thumb" src="Football.jpg" alt="football"  onmouseenter="description_Football()" >
+        </div>
+        <div class="footer"><!--Footer-->
+            <h4>Created by - (Team D6) Nethum Imsara Hewaarachchi | All right reserved</h4>
+            <button onclick="location.href='../Nethum(Editor)/Nethum.html'">Page Editor</button>
+        </div>
+      <script src="Gallery.js" ></script>    
+</body>
+</html>
