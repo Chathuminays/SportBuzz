@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+.mininav{
+    background-color: #13005A;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    padding-left: 8rem;
+}
+
+.mininav .link{
+    margin-right: 6rem;
+}
+
+.mininav .link button{
+    width: 140px;
+    padding: 10px 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #090808;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mininav .link button:hover{
+    background-color: #362FD9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.scorecard{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 60px 10px 60px;
+    background-color: #13005A;
+    color: #fff;
+}
+
+.scorecard h1{
+    text-align: center;
+}
+
+.scorecard img{
+    width: 60px;
+    height: 30px;
+}
+
+.details{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #1C82AD;
+}
+
+.result{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.news-contain{
+    background-color: #13005A;
+    margin-top: 20px;
+}
+
+.news-contain h1{
+    text-align: center;
+    color: #fff;
+}
+
+.news{
+    background-color: #13005A;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
+
+.news .mainnews{
+    background-image: url(img/news/mainnews.png);
+    border-radius: 10px;
+    width: 50%;
+    height: 40rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.news .mainnews p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 33rem;
+}
+
+.news .subnews{
+    width: 25%;
+}
+
+.news .subnews h3{
+    color: #fff;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.news .subnews .box .image{
+    width: 70%;
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 40px;
+    transition: transform 0.5s;
+}
+
+.news .subnews .box .image:hover{
+    transform: translateY(-10px);
+}
+
+.news1{
+    background-image:url(img/news/subnews1.png);
+}
+.news2{
+    background-image:url(img/news/subnews2.png);
+}
+.news3{
+    background-image:url(img/news/subnews3.png);
+}
+.news4{
+    background-image:url(img/news/subnews4.png);
+}
+
+.news .subnews .content{
+    width: 70%;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 80px;
+}
+
+.news .subnews .box1 .content,
+.news .subnews .box3 .content{
+    margin-bottom: 6rem;
+    margin-top: 20px;
+}
+
+.rank-contain{
+    background-color: #13005A;
+    margin-top: 20px;
+}
+
+.rank{
+    text-align: center;
+    color: #fff;
+}
+
+.ranking {
+    background-color: #13005a;
+    margin-top: 20px;
+    display: flex;
+    padding-left: 140px;
+}
+  
+.ranking .table-contain {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-right: 70px;
+}
+  
+.table .row {
+    width: 18rem;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 2px;
+}
+
+.table .row:hover {
+    background-color: #1C82AD;
+    cursor: pointer;
+}
+  
+.table .topic {
+    text-align: center;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.lastrow{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  
+.rows,
+.country {
+    display: flex;
+    align-items: center;
+}
+  
+.row .country .flag {
+    width: 40px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 50px;
+}
+  
+.rows .flag1 {
+    background-image: url(img/flags/australia.png);
+   margin-left: 23px;
+}
+  
+.rows .flag2 {
+    background-image: url(img/flags/india.png);
+    margin-left: 20px;
+}
+  
+.rows .flag3 {
+    background-image: url(img/flags/england.png);
+    margin-left: 20px;
+}
+  
+.rows .flag4 {
+    background-image: url(img/flags/southafrica.png);
+    margin-left: 20px;
+}
+  
+.rows .flag5 {
+    background-image: url(img/flags/newze.png);
+    margin-left: 20px;
+}
+.rows .flag-odi {
+    background-image: url(img/flags/pak.png);
+    margin-left: 20px;
+}
+  
+.rows h3 {
+    color: #000;
+    font-size: 18px;
+    margin: 0;
+}
+  
+.rows .rank {
+    margin-left: 15px;
+}
+  
+.rows .name {
+    margin-right: 10px;
+}
+
+.player-rank{
+    background-color: #13005A;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.player-rank h1{
+    margin-bottom: 30px;
+}
+
+.batting-contain{
+    padding-bottom: 20px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.batting-contain .batting:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+
+.batting-contain .batting .type{
+    background-color: #fff;
+    width: 400px;
+    font-weight: 600;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.batting-contain .batting .logo{
+    background-color: #000;
+    width: 400px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.batting-contain .batting .logo .name:hover{
+    cursor: pointer;
+    background-color: #bbb5b5;
+    color: #000;
+}
+
+.batting-contain .batting .logo .player{
+    width: 130px;
+    height: 140px;
+    margin-left: 250px;
+}
+
+.batting-contain .batting .logo .name{
+    margin-top: -100px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.batting-contain .batting .logo .name .flag{
+    width: 50px;
+    height: 30px;
+
+}
+
+.banner-contain{
+    margin-top: 20px;
+}
+
+.banner{
+    background-image: url(img/crickbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+}
+
+.banner h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 90px;
+}
+
+
+  

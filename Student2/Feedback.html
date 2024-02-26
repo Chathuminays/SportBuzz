@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="text">Sport<span>Buzz</span></a>
+         <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="../Student1/Buyproducts.html">Shop</a>
+            <a href="../Student3/Start_Quiz.html">Quiz</a>
+            <a href="../Student4/Gallery 2/Gallery.html">Gallery</a>
+            <a href="../Student4/Site map/Sitemap.html">Site Map</a>
+            <a href="Feedback.html" class="active">Feedback</a>
+            <a href="../Student3/AboutUs.html">About us</a>
+        </nav>
+        <a href="#"><img src="img/logo.png" alt="" class="logo"></a>  
+    </header>
+
+    <div class="feedback-banner">
+        <h1>#Feedback</h1>
+    </div>
+    <form action="mailto:ichathumina2002@gmail.com" enctype="text/plain" id="form" method="post" name="form" onsubmit="return validated()">
+        <div class="container">
+            <div class="feedbackbox">
+                <h1>1) How satisfied were you with our website today?</h1>
+                <div class="emoji">
+                    <div id="emoji">
+                        <img src="img/emoji/poor.png" alt="">
+                        <img src="img/emoji/verybad.png" alt="">
+                        <img src="img/emoji/litebad.png" alt="">
+                        <img src="img/emoji/okay.png" alt="">
+                        <img src="img/emoji/satisfied.png" alt="">
+                        <img src="img/emoji/litegood.png" alt="">
+                        <img src="img/emoji/good.png" alt="">
+                        <img src="img/emoji/verygood.png" alt="">
+                        <img src="img/emoji/excellent.png" alt="">
+                        <img src="img/emoji/lovely.png" alt="">
+                    </div> 
+                </div>
+                <div class="labels">
+                    <label>01</label>
+                    <label>02</label>
+                    <label>03</label>
+                    <label>04</label>
+                    <label>05</label>
+                    <label>06</label>
+                    <label>07</label>
+                    <label>08</label>
+                    <label>09</label>
+                    <label>10</label>
+                </div>
+                <div class="rating">
+                    <input type="radio" name="rating" class="fas" value="01">
+                    <input type="radio" name="rating" class="fas" value="02">
+                    <input type="radio" name="rating" class="fas" value="03">
+                    <input type="radio" name="rating" class="fas" value="04">
+                    <input type="radio" name="rating" class="fas" value="05">
+                    <input type="radio" name="rating" class="fas" value="06">
+                    <input type="radio" name="rating" class="fas" value="07">
+                    <input type="radio" name="rating" class="fas" value="08">
+                    <input type="radio" name="rating" class="fas" value="09">
+                    <input type="radio" name="rating" class="fas" value="10">
+                </div>
+                <div id="uncheck">
+                    Please select at least one rateing
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="comment">
+                <h1>2) Please could you tell us your reasons for giving this ratings</h1>
+                <textarea name="comment" id="commenttext" cols="70" rows="10"></textarea>
+                <div id="texterror">
+                    Please fill up your comment
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="select">
+                <h1>3) How did you want to complete this task today?</h1>
+                <select name="selector" id="select">
+                    <option value="">Select Method</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Website">Website</option>
+                    <option value="Webchat">Webchat</option>
+                    <option value="Socialmedia">Social media</option>
+                    <option value="Email">Email</option>
+                </select>
+                <div id="selecterror">
+                    Please select at least one option
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="fav-choice">
+                <h1>4) What is your favourite sport in Sportbuzz website?</h1>
+                <select name="choice" id="favourite">
+                    <option value="">Select Sport</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Soccer">Soccer</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Badminton">Badminton</option>
+                </select>
+                <div id="choice_error">
+                    Please select at least one option
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ideas">
+                <h1>5) Do you have any suggestions for how we can improve our website?</h1>
+                <textarea name="suggestions" id="idea" cols="70" rows="6"></textarea>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="btn">
+                <button type="submit" id="submit" onclick="return validateProceed()">Send Feedback</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="footer">
+        <h4>Created by - (Team D6) Indusara Kumaranayake | All right reserved</h4>
+        <button id="editor" onclick="location.href='Pageeditor.html'">Page Editor</button>
+      </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="feedback.js"></script>
+
+</body>
+</html>
