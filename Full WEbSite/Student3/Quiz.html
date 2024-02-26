@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Quiz</title>
+        <link rel="icon" type="image" href="Images/logo.jpg">
+        <link rel="stylesheet" href="CS&JS/quiz.css">
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <header class="header">
+            <a href="#" class="text">Sport<span>Buzz</span></a>
+             <nav class="navbar">
+                <a href="../Student2/Home.html">Home</a>
+                <a href="../Student1/Buyproducts.html">Shop</a>
+                <a href="Start_Quiz.html" class="active">Quiz</a>
+                <a href="../Student4/Gallery 2/Gallery.html">Gallery</a>
+                <a href="../Student4/Site map/Sitemap.html">Site Map</a>
+                <a href="../Student2/Feedback.html">Feedback</a>
+                <a href="AboutUs.html">About us</a>
+            </nav>
+            <a href="#"><img src="Images/logo.jpg" alt="" class="logo"></a>  
+        </header>
+        <div class="quiz-container" id="quiz">
+            <header>
+                <div class="title">Sports Trivia!</div>
+                <div id="time-box">
+                    <div id="timer">Time: 00:00</div>
+                </div>
+            </header>
+            <hr/>
+            <div class="quiz-header">
+                <section>
+                    <!--The questions and answers are passed here-->
+                    <h2 id="questions">Question text</h2>
+                    <br/>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Answer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Answer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Answer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d_text">Answer</label>
+                        </li>
+                    </ul>
+                    <!--If no answer is selected when clicking the next button-->
+                    <label id="error" style="display: none;color: red; text-align: center;font-size: 14px;font-weight: bold;">
+                        Please select an answer.
+                    </label>
+                </section>
+            </div>
+            <footer>
+                <!--To go to the next page-->
+                <button id="next_btn">Next</button>
+            </footer>  
+        </div>
+        <script src="CS&JS/quiz.js"></script>
+        <!--Footer of the page-->
+        <div class="footer">
+            <h4>Created by - (Team D6) Vidumini Dayananda | All right reserved</h4>
+            <button id="editor" onclick="window.location.href='PageEditor.html';">Page Editor</button>
+        </div>
+    </body>
+</html>

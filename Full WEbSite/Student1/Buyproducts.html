@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Buyproduct</title>
+    <link rel="stylesheet" href="StyleSheet3.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <script src="Script1.js"></script>
+    <header class="header">
+        <a href="#" class="text">Sport<span>Buzz</span></a>
+        <nav class="navbar">
+            <a href="../Student2/Home.html"  class="active">Home</a>
+            <a href="#">Shop</a>
+            <a href="../Student3/Start_Quiz.html">Quiz</a>
+            <a href="../Student4/Gallery 2/Gallery.html">Gallery</a>
+            <a href="../Student4/Site map/Sitemap.html">Site Map</a>
+            <a href="../Student2/Feedback.html">Feedback</a>
+            <a href="../Student3/AboutUs.html">About us</a>
+        </nav>
+        <a href="#"><img src="imglogo.jpeg" alt="" class="logo"></a>
+    </header>
+
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="content">
+            <img src="Football.jpeg">
+            <h3>Football</h3>
+            <h1>Rs 10000.00</h1>
+            <p>
+                <label for="quantity">Quantity: </label><input class="button" type="number" id="product1" name="PQuantity"
+                                                               min=0>
+            </p>
+            <p>
+                <button type="button" name="addToCart" onclick="shopedProduct1()" id="0">Add to Cart</button>
+            </p>
+            <button class="buy-1">----------</button>
+        </div>
+
+        <div class="content">
+            <img src="Football_Gloves.jpg">
+            <h3>Keeper Gloves</h3>
+            <h1>Rs 8000.00</h1>
+            <p>
+                <label for="quantity">Quantity: </label><input class="button" type="number" id="product2" name="PQuantity"
+                                                               min=0>
+            </p>
+            <p>
+                <button type="button" name="addToCart" onclick="shopedProduct2()" id="1">Add to Cart</button>
+            </p>
+
+            <button class="buy-2">----------</button>
+        </div>
+        <div class="content">
+            <img src="Leather bat.jpg">
+            <h3>Leather bat</h3>
+            <h1>Rs 7500.00</h1>
+            <p>
+                <label for="quantity">Quantity: </label><input class="button" type="number" id="product3" name="PQuantity"
+                                                               min=0>
+            </p>
+            <p>
+                <button type="button" name="addToCart" onclick="shopedProduct3()" id="2">Add to Cart</button>
+            </p>
+            <button class="buy-3">----------</button>
+        </div>
+
+
+        <div class="content">
+            <img src="Badminton.jpg">
+            <h3>Badminton</h3>
+            <h1>Rs 5000.00</h1>
+            <p>
+                <label for="quantity">Quantity: </label><input class="button" type="number" id="product4" name="PQuantity"
+                                                               min=0>
+            </p>
+            <p>
+                <button type="button" name="addToCart" onclick="shopedProduct4()" id="3">Add to Cart</button>
+            </p>
+
+            <button class="buy-4">----------</button>
+        </div>
+    </div>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+
+        <!-- Form -->
+
+        <div class="details" id="formdata">
+            <h3 id="fhead">Personal Details</h3>
+            <hr>
+            <label for="fname">Name</label>
+            <div class="input_padding">
+                <input type="text" name="fullname" id="name" size="50" class="button">
+            </div>
+            <label for="mail">Email address</label>
+            <div class="input_padding">
+                <input type="text" name="Email" id="email" size="40" class="button">
+            </div>
+            <label for="address"> Address &emsp; &emsp; &ensp;</label>
+            <div class="input_padding">
+                <input type="text" name="Address" id="address" size="40" class="button">
+            </div>
+            <label for="creditcard"> Credit card No &ensp;</label>
+            <div class="input_padding">
+                <input type="number1" id="Cnumber" class="button">
+            </div>
+            <label for="telephone"> Mobile No &emsp; &emsp;</label>
+            <div class="input_padding">
+                <input type="number1" id="Mnumber" class="button">
+            </div>
+        </div>
+
+
+        <div class="orderbutton">
+            <center>
+                <table align="center">
+                    <tr>
+                        <td><input type="submit" value="Place Your Order" class="formbuttons"></td>
+                        <td><input type="reset" value="Reset" class="formbuttons"></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </form>
+    <button class="button-33" onclick="Page_Editor();" style="margin-top:0;">View Editor</button>
+    <script>
+        function Page_Editor() {
+   window.location = "PageEditor.html";
+ }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;   
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #1C82AD;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #362FD9;
+    border-radius: 5rem;
+    border: 1px solid #000;
+}
+
+.logo{
+    width: 50px;
+    margin-right: 40px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    box-shadow: 0 1.6px 8px rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+
+.header .navbar a{
+    font-size: 20px;
+    color: #000;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header .navbar a:hover{
+    color: #fff;
+    background-color: #1C82AD;
+    padding: 25px 20px 25px 20px;
+    margin: 0 5px;
+}
+.header .navbar .active{
+    color: #fff;
+    background-color: #13005A;
+    padding: 25px 20px 25px 20px;
+    margin: 0 5px;
+}
+
+.text{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #57C5B6;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text span{
+    color: #1C82AD;
+}
+
+.mininav{
+    background-color: #13005A;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    padding-left: 5rem;
+}
+
+.mininav .link{
+    margin-right: 10rem;
+}
+
+.mininav .link button{
+    width: 140px;
+    padding: 10px 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #090808;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+
+.mininav .link button:hover{
+    background-color: #362FD9;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.scorecard{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 60px 10px 60px;
+    background-color: #13005A;
+    color: #fff;
+}
+
+.scorecard h1{
+    text-align: center;
+}
+
+.scorecard img{
+    width: 60px;
+    height: 30px;
+}
+
+.details{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #1C82AD;
+}
+
+.result{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+.news-contain{
+    background-color: #13005A;
+    margin-top: 20px;
+}
+
+.news-contain h1{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.news{
+    background-color: #13005A;
+    margin-top:0px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
+
+.news .mainnews{
+    background-image: url(sindhu.jpeg);
+    border-radius: 10px;
+    width: 50%;
+    height: 30rem;
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 60px;
+    
+}
+
+.news .mainnews p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 33rem;
+}
+
+.news .subnews{
+    width: 25%;
+   padding-bottom: 50px;
+}
+
+.news .subnews h3{
+    color: #fff;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.news .subnews .box .image{
+    width: 70%;
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.news .subnews .box .image:hover{
+    transform: translateY(-10px);
+}
+
+.news1{
+    background-image:url(alex.webp);
+}
+.news2{
+    background-image:url(carolin.avif);
+}
+.news3{
+    background-image:url(korea.avif);
+}
+.news4{
+    background-image:url(bwf.jpeg);
+}
+
+.news .subnews .content{
+    width: 70%;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 80px;
+}
+
+.news .subnews .box1 .content,
+.news .subnews .box3 .content{
+    margin-bottom: 0rem;
+    margin-top: 0px;
+}
+
+.rank-contain{
+    background-color: #15025d;
+    margin-top: 20px;
+}
+
+.rank{
+    text-align: center;
+    color: #fff;
+}
+
+.ranking {
+    background-color: #13005a;
+    margin-top: 20px;
+    display: flex;
+    padding-left: 140px;
+}
+  
+.ranking .table-contain {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    margin-right: 10px;
+}
+  
+.table .row {
+    width: 18rem;
+    height: 50px;
+    background-color: #000000;
+    margin-bottom: 2px;
+}
+
+.table .row:hover {
+    background-color: #1C82AD;
+    cursor: pointer;
+}
+  
+.table .topic {
+    color: #e7e7e7;
+    text-align: center;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 12px;
+}
+
+.lastrow{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  
+.rows,
+.country {
+    display: flex;
+    align-items: center;
+}
+  
+.row .country .flag {
+    width: 40px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 50px;
+}
+  
+.rows .flag6 {
+    background-image: url(Denmark.png);
+   margin-left: 23px;
+}
+  
+.rows .flag2 {
+    background-image: url(indonisia.png);
+    margin-left: 20px;
+}
+  
+.rows .flag3 {
+    background-image: url(china.png);
+    margin-left: 20px;
+}
+  
+.rows .flag4 {
+    background-image: url(malayasia.jpeg);
+    margin-left: 20px;
+}
+  
+.rows .flag7 {
+    background-image: url(japan.png);
+    margin-left: 20px;
+}
+.rows .flag5 {
+    background-image: url(southkorea.jpeg);
+    margin-left: 20px;
+}
+.rows .flag8 {
+    background-image: url(taiwan.png);
+    margin-left: 20px;
+}
+  
+.rows h3 {
+    color: #e7e7e7;
+    font-size: 18px;
+    margin: 0;
+}
+  
+.rows .rank {
+    margin-left: 15px;
+}
+  
+.rows .name {
+    margin-right: 10px;
+}
+
+.banner-contain{
+    margin-top: 20px;
+}
+
+.banner{
+    background-image: url(racket.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.banner h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.footer{
+    background-color: #bbb5b5;
+    margin-top: 20px;
+    width: 100%;
+    height: 9rem;
+}
+
+.footer h4{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer button{
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 70rem;
+    margin-bottom: 10px;
+}
+
+.footer button:hover{
+    background-color: #362FD9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.details .team1 img,
+.details .team2 img {
+  width: 45px;
+}
+
+#editor{
+    position: absolute;
+    top:  2000px;
+    left: 1200px;
+    right: 50px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.footer button {
+    position: relative;
+    bottom: 40px;
+  }
+  
+  .player-rank{
+    background-color: #13005A;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.player-rank h1{
+    margin-bottom: 30px;
+}
+
+.batting-contain{
+    padding-bottom: 20px;
+    margin-left: 110px;
+    display: flex;
+}
+
+.batting-contain .batting:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+
+.batting-contain .batting .type{
+    background-color: #fff;
+    width: 400px;
+    font-weight: 600;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.batting-contain .batting .logo{
+    background-color: #000;
+    width: 400px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.batting-contain .batting .logo .name:hover{
+    cursor: pointer;
+    background-color: #bbb5b5;
+    color: #000;
+}
+
+.batting-contain .batting .logo .player{
+    width: 130px;
+    height: 140px;
+    margin-left: 250px;
+}
+
+.batting-contain .batting .logo .name{
+    margin-top: -100px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.batting-contain .batting .logo .name .flag{
+    width: 50px;
+    height: 30px;
+
+}
+
